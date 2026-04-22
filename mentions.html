@@ -1,52 +1,169 @@
-<div>
-<p>
-Mentions légales
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-1. Éditeur du site
-Le présent site, accessible à l’adresse https://sublair.fr
-, est édité par :
+  <!-- ── SEO de base ── -->
+  <title>Subl'air – Aérogommage à Chinon</title>
+  <meta name="description" content="Subl'air, spécialiste de l'aérogommage à Rivière en Indre-et-Loire (37). Décapage doux de meubles anciens, escaliers, poutres, métaux et objets décoratifs. Devis gratuit, intervention à domicile." />
+  <meta name="keywords" content="aérogommage, décapage, meubles anciens, poutres apparentes, escaliers, Rivière, Chinon, Indre-et-Loire, 37, Monica Charrais, Subl'air, restauration bois, décapage métal" />
+  <meta name="author" content="Monica Charrais – Subl'air" />
+  <meta name="robots" content="index, follow" />
 
-Raison sociale : Subl’air
-Représentant légal : Monica Charrais
-Statut : Artisan (entreprise individuelle / auto-entrepreneur)
-Activité : Décapage par aérogommage sur tous supports
-Code APE : 8122Z – Autres activités de nettoyage des bâtiments et nettoyage industriel
-Adresse : 23 rue des Lavandières, 37500 Rivière, France
-Numéro SIRET : 451 696 173 00025
-Email : monica.00@live.fr
+  <!-- ── Open Graph (Facebook, LinkedIn…) ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Subl'air – Aérogommage à Rivière (37)" />
+  <meta property="og:description" content="Décapage doux et écologique par aérogommage. Meubles, escaliers, poutres, métaux. Intervention à domicile en Indre-et-Loire. Devis gratuit." />
+  <meta property="og:locale"      content="fr_FR" />
 
-2. Directeur de la publication
-Le directeur de la publication est : Monica Charrais
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Subl'air – Aérogommage à Rivière (37)" />
+  <meta name="twitter:description" content="Décapage doux par aérogommage. Meubles, escaliers, poutres, métaux. Devis gratuit, intervention à domicile." />
 
-3. Hébergement du site
-Le site est hébergé par :
+  <!-- ── Données structurées JSON-LD (Google Business) ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://www.sublair.fr",
+    "@type": "LocalBusiness",
+    "name": "Subl'air",
+    "description": "Spécialiste de l'aérogommage – décapage doux de meubles, escaliers, poutres, métaux et objets décoratifs.",
+    "founder": "Monica Charrais",
+    "telephone": "+33786143651",
+    "email": "monica.00@live.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "23 rue des Lavandières",
+      "addressLocality": "Rivière",
+      "postalCode": "37500",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "addressRegion": "Indre-et-Loire"
+    },
+    "areaServed": "Indre-et-Loire",
+    "priceRange": "€€",
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "sameAs": []
+  }
+  </script>
 
-Hébergeur : GitHub, Inc.
-Adresse : 88 Colin P. Kelly Jr St, San Francisco, CA 94107, États-Unis
-Site web : https://github.com
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  
+   <link rel="stylesheet" href="back.css" type="text/css" media="screen"/>	
+</head>
+<body>
+<div class="page-wrapper">
 
-4. Nom de domaine
-Le nom de domaine sublair.fr est enregistré auprès de :
+  <!-- ══ HEADER ══ -->
+  <div class="banner">
+    <div class="container">
+	
+	
 
-Registrar : IONOS
+      <!-- 3 colonnes : logo | aérogommage centré | contact -->
+      <div class="row align-items-center justify-content-between pb-3">
 
-5. Propriété intellectuelle
-L’ensemble du contenu présent sur ce site (textes, images, photographies, graphismes, logo, etc.) est protégé par les lois en vigueur relatives à la propriété intellectuelle.
-Les photographies présentes sur le site sont la propriété exclusive de l’éditeur, sauf mention contraire.
-Toute reproduction, représentation ou utilisation, totale ou partielle, sans autorisation écrite préalable est interdite.
+        <div class="col-md-3 d-flex flex-column align-items-start">
+			<a href="index.html" style="text-decoration:none">
+				<img src="logo-sans-fond.png" alt="Logo Subl'air – trois vagues dorées" class="logo-img" />
+				<h1 class="logo-text">Subl'<span>air</span></h1>
+				</a>
+        </div>
 
-6. Utilisation des photographies (réalisations)
-Les photographies publiées sur ce site présentent des réalisations effectuées par l’éditeur.
-Elles sont publiées avec l’accord des clients lorsque cela est nécessaire et dans le respect du droit à l’image et de la vie privée.
+        <div class="col-md-6 text-center header-service">
+          <div class="service-title d-flex flex-column">
+			<span>RÉNOVATION</span>
+			<span>MEUBLES & MÉTAUX</span>
+			<span>SANS LES ABIMER</span>
+		 </div>
+          <!--<p class="service-tagline">L'air qui sublime vos surfaces et objets</p>-->
+        </div>
 
-7. Données personnelles
-Ce site ne collecte aucune donnée personnelle.
+        <div class="col-md-3 text-md-end mt-3 mt-md-0">
+          <div class="owner-name">Monica Charrais</div>
+          <div class="contact-line"><i class="bi bi-telephone-fill me-2"></i>07 86 14 36 51</div>
+          <div class="contact-line"><a href="mailto:monica.00@live.fr"><i class="bi bi-envelope-fill me-2"></i>monica.00@live.fr</a></div>
+        </div>
+      </div>
 
-8. Cookies
-Ce site n’utilise pas de cookies à des fins de suivi ou de mesure d’audience.
-Des cookies techniques peuvent être déposés par l’hébergeur GitHub, Inc..
+    </div>
+  </div>
 
-9. Responsabilité
-L’éditeur du site ne peut être tenu responsable des dommages directs ou indirects liés à l’utilisation du site.
-</p>
+	<div class="content">
+<div class="ms-5 ">
+
+<h2>Mentions légales</h2>
+
+<h4>1. Éditeur du site</h4>
+<span>Le présent site, accessible à l’adresse https://sublair.fr</span>
+<span>, est édité par :</span>
+
+<span>Raison sociale : Subl’air</span>
+<span>Représentant légal : Monica Charrais</span>
+<span>Statut : Artisan (entreprise individuelle / auto-entrepreneur)</span>
+<span>Activité : Décapage par aérogommage sur tous supports</span>
+<span>Code APE : 8122Z – Autres activités de nettoyage des bâtiments et nettoyage industriel</span>
+<span>Adresse : 23 rue des Lavandières, 37500 Rivière, France</span>
+<span>Numéro SIRET : 451 696 173 00025</span>
+<span>Email : monica.00@live.fr</span>
+
+<h4>2. Directeur de la publication</h4>
+<span>Le directeur de la publication est : Monica Charrais</span>
+
+<h4>3. Hébergement du site</h4>
+<span>Le site est hébergé par :</span>
+
+<span>Hébergeur : GitHub, Inc.</span>
+<span>Adresse : 88 Colin P. Kelly Jr St, San Francisco, CA 94107, États-Unis</span>
+<span>Site web : https://github.com</span>
+
+<h4>4. Nom de domaine</h4>
+<span>Le nom de domaine sublair.fr est enregistré auprès de :</span>
+
+<span>Registrar : IONOS</span>
+
+<h4>5. Propriété intellectuelle</h4>
+<span>L’ensemble du contenu présent sur ce site (textes, images, photographies, graphismes, logo, etc.) est protégé par les lois en vigueur relatives à la propriété intellectuelle.</span>
+<span>Les photographies présentes sur le site sont la propriété exclusive de l’éditeur, sauf mention contraire.</span>
+<span>Toute reproduction, représentation ou utilisation, totale ou partielle, sans autorisation écrite préalable est interdite.</span>
+
+<h4>6. Utilisation des photographies (réalisations)</h4>
+<span>Les photographies publiées sur ce site présentent des réalisations effectuées par l’éditeur.</span>
+<span>Elles sont publiées avec l’accord des clients lorsque cela est nécessaire et dans le respect du droit à l’image et de la vie privée.</span>
+
+<h4>7. Données personnelles</h4>
+<span>Ce site ne collecte aucune donnée personnelle.</span>
+
+<h4>8. Cookies</h4>
+<span>Ce site n’utilise pas de cookies à des fins de suivi ou de mesure d’audience.</span>
+<span>Des cookies techniques peuvent être déposés par l’hébergeur GitHub, Inc..</span>
+
+<h4>9. Responsabilité</h4>
+<span>L’éditeur du site ne peut être tenu responsable des dommages directs ou indirects liés à l’utilisation du site.</span>
+
 </div>
+
+</div>
+  <!-- ══ FOOTER ══ -->
+  
+  <div id="en-cours" class="align-items-center">
+		<span>Contactez-moi pour un devis rapide et gratuit</span>
+		<span>07 86 14 36 51 / monica.00@live.fr</span>
+	</div>
+  <footer>
+    <div class="container text-center py-3">
+      <!--<p class="mb-1">23 rue des Lavandières, 37500 Rivière</p>-->
+      <p class="mb-0">© 2026 Subl'air — <a href="mentions.html" alt="Mentions légales">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</div><!-- /.page-wrapper -->
+</body>
+</html>
