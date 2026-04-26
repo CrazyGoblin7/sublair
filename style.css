@@ -4,26 +4,7 @@
   --accent: #e07b2a;
   --check-color: #2e7d4f;
   --light-bg: #f7f5f0;
-  
 }
-
-.page-wrapper {
-	//background: transparent url("image000000.png") no-repeat scroll 0 0 / 100% auto;
-}
-
-// .header {
-  //    background: linear-gradient(90deg, #0a0f2c, #0d1b5e, #1a3bb8);
-    //  color: white;
-   //   padding: 30px 20px;
-   // }
-	
-#en-cours {
-      text-align: center;
-      padding: 5px;
-     // background: #111;
-      color: white;
-	  font-size: 2rem;
-    } 
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -39,9 +20,6 @@ body {
 
 /* ══ HEADER ══ */
 header {
- // background-image: url('header.png');
- // background-size: cover;
-  //background-position: center top;
   color: #fff;
 }
 
@@ -123,10 +101,28 @@ header {
 }
 
 /* ══ SECTION PRINCIPALE ══ */
-.main-content {
- // background-image: url('content.png');
- // background-size: cover;
-  //border-bottom: 2px solid #c4a86a;
+
+/* --- Bloc de contenu centré (Remplace ton ancien bloc .main-content, .technique, .pourquoi) --- */
+.main-content .container, 
+.technique .container, 
+.pourquoi .container {
+    background: rgba(255, 255, 255, 0.3); /* Un peu plus opaque pour mieux lire */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 85%;                    /* 👈 C'est ici qu'on limite la largeur */
+    margin: 0 auto;                      /* Centre le bloc */
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* On enlève le fond blanc sur les sections elles-mêmes pour qu'elles soient transparentes */
+.main-content, .technique, .pourquoi {
+    background: transparent !important;
+    padding: 20px 0; /* Espace entre les blocs */
+	font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #2a2a2a;
+   font-weight: 600; /* Texte un peu plus épais */
 }
 
 .main-heading {
@@ -139,7 +135,6 @@ header {
 
 /* Liste à coches */
 .checklist {
-  //list-style: none;
   padding: 0;
   margin: 0;
   
@@ -149,28 +144,22 @@ header {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   padding: 7px 0;
- // border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
   gap: 10px;
   color: #2a2a2a;
   line-height: 1.4;
+   font-weight: 600; /* Texte un peu plus épais */
 }
 
 .checklist li::before {
   content: "";
- // display: inline-block;
   width: 3rem;
   height: 3rem;
- // margin-right: 8px;
    background: url('buse.png') no-repeat center / contain;
    flex: 0 0 3rem;  
    transform: translateY(1px);
 }
-
-//.checklist li:last-child {
-//  border-bottom: none;
-//}
 
 .check {
   font-size: 1.5rem;
@@ -185,9 +174,6 @@ header {
 }
 
 .photo-placeholder {
-//  width: 100%;
- // height: 130px;
-  //background-color: #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,24 +189,10 @@ header {
   margin-top: 3px;
 }
 
-/* ══ TECHNIQUE ══ */
-.technique {
- // background-image: url('content.png');
- // background-size: cover;
- // border-bottom: 1px solid #c4a86a;
-}
-
 .technique p {
   font-size: 1.5rem;
   line-height: 1.75;
   color: #333;
- // max-width: 700px;
-}
-
-/* ══ POURQUOI ══ */
-.pourquoi {
-  //background-image: url('content.png');
- // background-size: cover;
 }
 
 /* ══ TITRES DE SECTION ══ */
@@ -235,17 +207,53 @@ header {
   display: inline-block;
 }
 
+/* Rend les titres plus "solides" */
+.main-heading, .section-heading {
+    color: #1a2a3a !important; /* Un bleu-nuit très foncé */
+    text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+}
+
+/* Améliore la checklist */
+
+
+#en-cours {
+    /* 1. Apparence : Gris transparent */
+    background: rgba(40, 40, 40, 0.7); 
+    backdrop-filter: blur(5px); /* Effet de flou sur le sable derrière */
+    -webkit-backdrop-filter: blur(5px);
+    
+    /* 2. Texte */
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    
+    /* 3. Positionnement */
+    margin-top: 20px;     /* Espace avec la section du dessus */
+    margin-bottom: 0;     /* On le colle au bas du content */
+    position: relative;
+    z-index: 5;           /* Pour être sûr qu'il soit bien devant le ::before */
+    
+    /* 4. Largeur (optionnel) */
+    /* Si tu veux qu'il fasse toute la largeur : */
+    width: 100%;
+    /* Si tu veux qu'il ressemble à une carte comme les autres : */
+    /* max-width: 900px; margin: 40px auto; border-radius: 15px; */
+}
+
+#en-cours span {
+    display: block;
+    font-weight: 600;
+}
+
+#en-cours span.contactez-moi {
+     font-size: 1.5rem;
+}
+
+
 /* ══ FOOTER ══ */
 footer {
- // background-image: url('footer.png');
- // background-size: cover;
- // background-position: center bottom;
   color: #b8d0e8;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.85rem;
-}
-
-footer p {
-  margin: 0;
-  line-height: 1.8;
 }

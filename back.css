@@ -1,101 +1,106 @@
-html {
-  background-attachment: fixed;
+/* --- Base --- */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
+/* --- Bannière --- */
 .banner {
-	
- background:
-     /* ✨ étoiles (dense + variées) */
-    radial-gradient(1px 1px at 2% 5%, rgba(255,255,255,0.9), transparent 2px),
-    radial-gradient(1px 1px at 6% 18%, rgba(255,255,255,0.7), transparent 2px),
-    radial-gradient(1.5px 1.5px at 10% 40%, rgba(255,255,255,0.85), transparent 3px),
-    radial-gradient(1px 1px at 14% 70%, rgba(255,255,255,0.6), transparent 2px),
-
-    radial-gradient(1px 1px at 18% 25%, rgba(255,255,255,0.9), transparent 2px),
-    radial-gradient(1px 1px at 22% 60%, rgba(255,255,255,0.75), transparent 2px),
-    radial-gradient(1px 1px at 26% 10%, rgba(255,255,255,0.8), transparent 2px),
-
-    radial-gradient(1px 1px at 30% 45%, rgba(255,255,255,0.7), transparent 2px),
-    radial-gradient(1px 1px at 34% 80%, rgba(255,255,255,0.9), transparent 2px),
-
-    radial-gradient(1px 1px at 38% 20%, rgba(255,255,255,0.6), transparent 2px),
-    radial-gradient(1px 1px at 42% 55%, rgba(255,255,255,0.85), transparent 2px),
-
-    radial-gradient(1px 1px at 46% 30%, rgba(255,255,255,0.75), transparent 2px),
-    radial-gradient(1px 1px at 50% 75%, rgba(255,255,255,0.9), transparent 2px),
-
-    radial-gradient(1px 1px at 54% 15%, rgba(255,255,255,0.7), transparent 2px),
-    radial-gradient(1px 1px at 58% 60%, rgba(255,255,255,0.8), transparent 2px),
-
-    radial-gradient(1px 1px at 62% 35%, rgba(255,255,255,0.9), transparent 2px),
-    radial-gradient(1px 1px at 66% 80%, rgba(255,255,255,0.6), transparent 2px),
-
-    radial-gradient(1px 1px at 70% 20%, rgba(255,255,255,0.85), transparent 2px),
-    radial-gradient(1px 1px at 74% 55%, rgba(255,255,255,0.7), transparent 2px),
-
-    radial-gradient(1px 1px at 78% 10%, rgba(255,255,255,0.9), transparent 2px),
-    radial-gradient(1px 1px at 82% 45%, rgba(255,255,255,0.75), transparent 2px),
-
-    radial-gradient(1px 1px at 86% 70%, rgba(255,255,255,0.8), transparent 2px),
-    radial-gradient(1px 1px at 90% 30%, rgba(255,255,255,0.6), transparent 2px),
-
-    radial-gradient(1px 1px at 94% 15%, rgba(255,255,255,0.85), transparent 2px),
-    radial-gradient(1px 1px at 98% 60%, rgba(255,255,255,0.7), transparent 2px),
-
-    /* 🌌 voile ciel nocturne */
-    radial-gradient(ellipse at 50% 0%, rgba(10,20,40,0.6), transparent 60%),
-
-    /* 🌊 ton fond (sable clair en bas) */
-	linear-gradient(180deg, #1a2a3a 0%, #2b3f55 40%,  #f4e2bd 100%);
-}
-
-.content {
-  margin: 0;
-  min-height: 100vh;
-
-  background:
-    /* ☀️ lumière du ciel (diffuse) */
+    position: relative;
+    z-index: 1;
+    height: 40vh; /* Ajustez selon vos besoins */
     
- 
-    /* 🌊 zone légèrement plus humide (bas de l’écran) */
-linear-gradient(180deg,
-  #f4e2bd 0%,
-  #f6e4c2 60%,
-  #f2d7a6 100%
-);
+    /* Le dégradé complexe avec étoiles */
+    background:
+        /* ✨ étoiles */
+        radial-gradient(1px 1px at 2% 5%, rgba(255,255,255,0.9), transparent 2px),
+        radial-gradient(1px 1px at 6% 18%, rgba(255,255,255,0.7), transparent 2px),
+        radial-gradient(1.5px 1.5px at 10% 40%, rgba(255,255,255,0.85), transparent 3px),
+        radial-gradient(1px 1px at 14% 70%, rgba(255,255,255,0.6), transparent 2px),
+        radial-gradient(1px 1px at 18% 25%, rgba(255,255,255,0.9), transparent 2px),
+        radial-gradient(1px 1px at 22% 60%, rgba(255,255,255,0.75), transparent 2px),
+        radial-gradient(1px 1px at 26% 10%, rgba(255,255,255,0.8), transparent 2px),
+        radial-gradient(1px 1px at 30% 45%, rgba(255,255,255,0.7), transparent 2px),
+        radial-gradient(1px 1px at 34% 80%, rgba(255,255,255,0.9), transparent 2px),
+        radial-gradient(1px 1px at 38% 20%, rgba(255,255,255,0.6), transparent 2px),
+        radial-gradient(1px 1px at 42% 55%, rgba(255,255,255,0.85), transparent 2px),
+        radial-gradient(1px 1px at 46% 30%, rgba(255,255,255,0.75), transparent 2px),
+        radial-gradient(1px 1px at 50% 75%, rgba(255,255,255,0.9), transparent 2px),
+        radial-gradient(1px 1px at 54% 15%, rgba(255,255,255,0.7), transparent 2px),
+        radial-gradient(1px 1px at 58% 60%, rgba(255,255,255,0.8), transparent 2px),
+        radial-gradient(1px 1px at 62% 35%, rgba(255,255,255,0.9), transparent 2px),
+        radial-gradient(1px 1px at 66% 80%, rgba(255,255,255,0.6), transparent 2px),
+        radial-gradient(1px 1px at 70% 20%, rgba(255,255,255,0.85), transparent 2px),
+        radial-gradient(1px 1px at 74% 55%, rgba(255,255,255,0.7), transparent 2px),
+        radial-gradient(1px 1px at 78% 10%, rgba(255,255,255,0.9), transparent 2px),
+        radial-gradient(1px 1px at 82% 45%, rgba(255,255,255,0.75), transparent 2px),
+        radial-gradient(1px 1px at 86% 70%, rgba(255,255,255,0.8), transparent 2px),
+        radial-gradient(1px 1px at 90% 30%, rgba(255,255,255,0.6), transparent 2px),
+        radial-gradient(1px 1px at 94% 15%, rgba(255,255,255,0.85), transparent 2px),
+        radial-gradient(1px 1px at 98% 60%, rgba(255,255,255,0.7), transparent 2px),
+        /* 🌌 voile ciel nocturne */
+        radial-gradient(ellipse at 50% 0%, rgba(10,20,40,0.6), transparent 60%),
+        /* 🌊 Fond dégradé */
+        linear-gradient(180deg, #1a2a3a 0%, #2b3f55 40%, #f4e2bd 100%);
 
-  background-size:
-    100% 100%,
-    100% 100%,
-
-    /* reliefs irréguliers */
-    260px 220px,
-    320px 260px,
-    240px 200px,
-
-    /* grain */
-    3px 3px,
-    5px 5px,
-
-    /* base */
-    100% 100%;
-
-  background-position:
-    center,
-    center,
-
-    0 0,
-    60px 40px,
-    120px 80px,
-
-    0 0,
-    2px 2px,
-
-    center;
+    /* ⭐ BONUS : Fondre le bas de la bannière pour éviter la ligne de coupe */
+    -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
 }
 
-footer {
-	background:
-	 linear-gradient(180deg, #cfa067 0%, #2b3f55 40%, #1a2a3a 100% );
+/* --- Contenu --- */
+.content {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    
+    /* On remonte le bloc pour qu'il chevauche la bannière */
+    margin-top: -150px;
+	margin-bottom: -90px;
+    /* On décale le texte interne pour qu'il ne soit pas collé en haut */
+    padding-top: 80px; 
+	padding-bottom: 60px; 
+}
 
+.content::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Remplace top/left/right/bottom: 0 */
+    
+	/* Version 1*/
+    /*background-image:
+        linear-gradient(
+            to bottom,
+            rgba(244, 226, 189, 0.6) 0%,
+            rgba(244, 226, 189, 0.4) 25%,
+			rgba(244, 226, 189, 0.3) 50%,
+			rgba(244, 226, 189, 0.4) 75%,
+            rgba(244, 226, 189, 0.6) 100%
+        ),
+        url("sable.jpg");*/
+	
+	/* Version 2*/
+	background-color: rgba(244, 226, 189, 0.6);
+	background-image: url("sable.jpg");
+
+    
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+
+    /* Le masque qui crée la transparence sur le haut du sable */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 80px, black calc(100% - 80px), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 80px, black calc(100% - 80px), transparent 100%);
+  
+  
+    z-index: -1;
+}
+
+/* --- Footer --- */
+footer {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+	background: linear-gradient(180deg, #f4e2bd 0%, #2b3f55 40%, #1a2a3a 100%);
 }
