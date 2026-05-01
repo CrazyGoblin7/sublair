@@ -1,0 +1,320 @@
+:root {
+  --navy: #1e3550;
+  --navy-light: #264468;
+  --accent: #e07b2a;
+  --check-color: #2e7d4f;
+  --light-bg: #f7f5f0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #3e3c38;
+  color: #2a2a2a;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+header {
+  color: #fff;
+}
+
+.logo-img {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  clip-path: inset(18% 14% 18% 7%);
+  margin-bottom: -100px;
+  margin-top: -40px;
+}
+
+.logo-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  margin-left: 30px;
+}
+
+.logo-text span {
+  color: #a8d4f0;
+}
+
+.owner-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.6rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.contact-line {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #b8d0e8;
+  margin-top: 2px;
+
+  a {
+    color: #a8d4f0;
+  }
+
+  a:hover {
+    color: #94C0DC;
+  }
+
+  a:active {
+    color: #a8d4f0;
+  }
+}
+
+.contact-line i {
+  color: var(--accent);
+}
+
+.service-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.service-tagline {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6rem;
+  color: #b8d0e8;
+  margin-top: 4px;
+}
+
+.main-content .container,
+.technique .container,
+.pourquoi .container {
+  background: rgba(255, 255, 255, 0.3); /* Un peu plus opaque pour mieux lire */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 85%; /* 👈 C'est ici qu'on limite la largeur */
+  margin: 0 auto; /* Centre le bloc */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-content, .technique, .pourquoi {
+  background: transparent !important;
+  padding: 20px 0; /* Espace entre les blocs */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  font-weight: 600; /* Texte un peu plus épais */
+}
+
+.main-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2b3f55;
+  margin-bottom: 16px;
+}
+
+.checklist {
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2a2a2a;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.checklist li::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: url('img/buse.png') no-repeat center / contain;
+  flex: 0 0 3rem;
+  transform: translateY(1px);
+}
+
+.check {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--check-color);
+  flex-shrink: 0;
+}
+
+.avant-apres-photo {
+  text-align: center;
+}
+
+.photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #888;
+}
+
+.photo-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 3px;
+}
+
+.technique p {
+  font-size: 1.5rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.main-heading, .section-heading {
+  color: #1a2a3a !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+#en-cours {
+  /* 1. Apparence : Gris transparent */
+  background: rgba(40, 40, 40, 0.7);
+  backdrop-filter: blur(5px); /* Effet de flou sur le sable derrière */
+  -webkit-backdrop-filter: blur(5px);
+
+  /* 2. Texte */
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+
+  /* 3. Positionnement */
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+#en-cours span {
+  display: block;
+  font-weight: 600;
+}
+
+#en-cours span.contactez-moi {
+  font-size: 1.5rem;
+}
+
+footer {
+  color: #b8d0e8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 767px) {
+  .logo-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: -60px;
+    margin-top: -20px;
+  }
+
+  .logo-text {
+    font-size: 3rem;
+    margin-left: 15px;
+  }
+
+  .owner-name {
+    font-size: 2rem;
+  }
+
+  .contact-line {
+    font-size: 1.2rem;
+  }
+
+  .service-title {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  .main-content .container,
+  .technique .container,
+  .pourquoi .container {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .main-heading {
+    font-size: 1.6rem;
+  }
+
+  .checklist li {
+    font-size: 1.2rem;
+  }
+
+  .technique p {
+    font-size: 1.2rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #en-cours {
+    font-size: 1.4rem;
+    padding: 15px 10px;
+  }
+
+  #en-cours span.contactez-moi {
+    font-size: 1.1rem;
+  }
+
+  .contact-line {
+    color: #1e3550;
+    font-size: 1.6rem;
+  }
+
+  .contact-line a {
+    color: #1e3550;
+  }
+
+  .owner-name {
+    color: #1a2a3a;
+    font-size: 2.4rem;
+  }
+}
