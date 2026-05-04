@@ -104,7 +104,8 @@ header {
 
 .main-content .container,
 .technique .container,
-.pourquoi .container {
+.pourquoi .container,
+.zone-intervention .container {
   background: rgba(255, 255, 255, 0.3); /* Un peu plus opaque pour mieux lire */
   padding: 40px;
   border-radius: 20px;
@@ -114,7 +115,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main-content, .technique, .pourquoi {
+.main-content, .technique, .pourquoi, .zone-intervention {
   background: transparent !important;
   padding: 20px 0; /* Espace entre les blocs */
   font-family: 'Open Sans', sans-serif;
@@ -206,7 +207,7 @@ header {
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
 
-#en-cours {
+#bloc-contact {
   /* 1. Apparence : Gris transparent */
   background: rgba(40, 40, 40, 0.7);
   backdrop-filter: blur(5px); /* Effet de flou sur le sable derrière */
@@ -226,12 +227,12 @@ header {
   width: 100%;
 }
 
-#en-cours span {
+#bloc-contact span {
   display: block;
   font-weight: 600;
 }
 
-#en-cours span.contactez-moi {
+#bloc-contact span.contactez-moi {
   font-size: 1.5rem;
 }
 
@@ -269,7 +270,8 @@ footer {
 
   .main-content .container,
   .technique .container,
-  .pourquoi .container {
+  .pourquoi .container,
+  .zone-intervention .container {
     padding: 20px;
     max-width: 95%;
   }
@@ -295,12 +297,12 @@ footer {
     height: auto;
   }
 
-  #en-cours {
+  #bloc-contact {
     font-size: 1.4rem;
     padding: 15px 10px;
   }
 
-  #en-cours span.contactez-moi {
+  #bloc-contact span.contactez-moi {
     font-size: 1.1rem;
   }
 
