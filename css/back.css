@@ -82,6 +82,18 @@ footer {
   background: linear-gradient(180deg, #f4e2bd 0%, #2b3f55 40%, #1a2a3a 100%);
 }
 
+@media (max-width: 1919px) {
+  .banner {
+    min-height: 41vh;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner {
+    min-height: 42vh;
+  }
+}
+
 @media (max-width: 767px) {
   .banner {
     min-height: 55vh;
