@@ -33,6 +33,7 @@ header {
   color: #fff;
 }
 
+/* Banner */
 .logo-img {
   width: 320px;
   height: 320px;
@@ -70,15 +71,15 @@ header {
   margin-top: 2px;
 
   a {
-    color: #a8d4f0;
+	color: #a8d4f0;
   }
 
   a:hover {
-    color: #94C0DC;
+	color: #94C0DC;
   }
 
   a:active {
-    color: #a8d4f0;
+	color: #a8d4f0;
   }
 }
 
@@ -86,22 +87,16 @@ header {
   color: var(--accent);
 }
 
-.service-title {
+.banner-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 800;
   letter-spacing: 6px;
   color: #fff;
   text-transform: uppercase;
 }
 
-.service-tagline {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.6rem;
-  color: #b8d0e8;
-  margin-top: 4px;
-}
-
+/* Content */
 .main-content .container,
 .technique .container,
 .pourquoi .container,
@@ -110,14 +105,14 @@ header {
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 85%; /* 👈 C'est ici qu'on limite la largeur */
+  max-width: 85%; /* C'est ici qu'on limite la largeur */
   margin: 0 auto; /* Centre le bloc */
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-content, .technique, .pourquoi, .zone-intervention {
   background: transparent !important;
-  padding: 20px 0; /* Espace entre les blocs */
+  padding: 15px 0; /* Espace entre les blocs */
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   color: #2a2a2a;
@@ -126,10 +121,44 @@ header {
 
 .main-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #2b3f55;
-  margin-bottom: 16px;
+}
+
+.aerogommage-accroche {
+	 font-size: 1.6rem;
+}
+
+.surface-block {
+	.surface-heading {
+		
+	  font-size: 1.7rem;
+	  font-weight: 600;
+	  color: #2a2a2a;
+	
+	  img {
+		height: 0.7rem;
+	   flex: 0 0 3rem;
+	  transform: translateY(1px);
+	  }
+	 
+	}
+	
+	p {
+		 font-size: 1.4rem;
+	}
+}
+
+.section-heading {
+  //font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  //margin-bottom: 14px;
+  //padding-bottom: 6px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
 }
 
 .checklist {
@@ -191,21 +220,9 @@ header {
   color: #333;
 }
 
-.section-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 14px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid var(--accent);
-  display: inline-block;
-}
 
-.main-heading, .section-heading {
-  color: #1a2a3a !important;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
-}
+
+
 
 #bloc-contact {
   /* 1. Apparence : Gris transparent */
@@ -232,10 +249,11 @@ header {
   font-weight: 600;
 }
 
-#bloc-contact span.contactez-moi {
+#bloc-contact span.contactez-banner {
   font-size: 1.5rem;
 }
 
+/* Footer */
 footer {
   color: #b8d0e8;
   font-family: 'Open Sans', sans-serif;
