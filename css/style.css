@@ -145,6 +145,12 @@ a {
   padding: 0;
 }
 
+#carousel-aerogommage p {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
 #bloc-contact {
   /* 1. Apparence : Gris transparent */
   background: rgba(40, 40, 40, 0.7);
