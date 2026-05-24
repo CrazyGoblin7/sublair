@@ -145,6 +145,21 @@ a {
   padding: 0;
 }
 
+.image-before-after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+
+.image-before-after img {
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 #carousel-aerogommage p {
   color: #ffffff;
   padding: 0;
@@ -250,9 +265,12 @@ footer {
     font-size: 1.4rem;
   }
 
-  .carousel img {
-    max-width: 100%;
-    height: auto;
+  .image-before-after {
+    flex-direction: row;
+  }
+
+  .image-before-after img {
+    height: 200px;
   }
 
   #bloc-contact {
