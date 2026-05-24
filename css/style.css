@@ -71,15 +71,15 @@ header {
   margin-top: 2px;
 
   a {
-	color: #a8d4f0;
+    color: #a8d4f0;
   }
 
   a:hover {
-	color: #94C0DC;
+    color: #94C0DC;
   }
 
   a:active {
-	color: #a8d4f0;
+    color: #a8d4f0;
   }
 }
 
@@ -97,10 +97,17 @@ header {
 }
 
 /* Content */
-.main-content .container,
-.technique .container,
-.pourquoi .container,
-.zone-intervention .container {
+.main-section-block, .section-block {
+  background: transparent !important;
+  padding: 15px 0; /* Espace entre les blocs */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  font-weight: 600; /* Texte un peu plus épais */
+}
+
+.main-section-block .container,
+.section-block .container {
   background: rgba(255, 255, 255, 0.3); /* Un peu plus opaque pour mieux lire */
   padding: 40px;
   border-radius: 20px;
@@ -110,88 +117,54 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main-content, .technique, .pourquoi, .zone-intervention {
-  background: transparent !important;
-  padding: 15px 0; /* Espace entre les blocs */
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  color: #2a2a2a;
-  font-weight: 600; /* Texte un peu plus épais */
-}
+.main-section-block {
+  .main-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #2b3f55;
+  }
 
-.main-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #2b3f55;
-}
-
-.aerogommage-accroche {
-	 font-size: 1.6rem;
+  p {
+    font-size: 1.6rem;
+  }
 }
 
 .surface-block {
-	.surface-heading {
-		
-	  font-size: 1.7rem;
-	  font-weight: 600;
-	  color: #2a2a2a;
-	
-	  img {
-		height: 0.7rem;
-	   flex: 0 0 3rem;
-	  transform: translateY(1px);
-	  }
-	 
-	}
-	
-	p {
-		 font-size: 1.4rem;
-	}
+  .surface-heading {
+
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    padding: 0;
+    margin: 0;
+
+    img {
+      height: 0.7rem;
+      flex: 0 0 3rem;
+      transform: translateY(1px);
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
 }
 
 .section-heading {
-  //font-family: 'Playfair Display', serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #2a2a2a;
-  //margin-bottom: 14px;
-  //padding-bottom: 6px;
+  margin-bottom: 20px;
   border-bottom: 2px solid var(--accent);
   display: inline-block;
 }
 
-.checklist {
+.section-block p {
+  font-size: 1.5rem;
+  line-height: 1.75;
+  color: #333;
   padding: 0;
-  margin: 0;
-}
-
-.checklist li {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  padding: 7px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #2a2a2a;
-  line-height: 1.4;
-  font-weight: 600;
-}
-
-.checklist li::before {
-  content: "";
-  width: 3rem;
-  height: 3rem;
-  background: url('img/buse.png') no-repeat center / contain;
-  flex: 0 0 3rem;
-  transform: translateY(1px);
-}
-
-.check {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--check-color);
-  flex-shrink: 0;
 }
 
 .avant-apres-photo {
@@ -214,16 +187,6 @@ header {
   margin-top: 3px;
 }
 
-.technique p {
-  font-size: 1.5rem;
-  line-height: 1.75;
-  color: #333;
-}
-
-
-
-
-
 #bloc-contact {
   /* 1. Apparence : Gris transparent */
   background: rgba(40, 40, 40, 0.7);
@@ -233,7 +196,7 @@ header {
   /* 2. Texte */
   color: #ffffff;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 10px;
 
   /* 3. Positionnement */
@@ -242,15 +205,27 @@ header {
   position: relative;
   z-index: 5;
   width: 100%;
-}
 
-#bloc-contact span {
-  display: block;
-  font-weight: 600;
-}
+  p {
+    margin-bottom: 0.5rem;
+  }
 
-#bloc-contact span.contactez-banner {
-  font-size: 1.5rem;
+  .contact {
+    font-size: 1.9rem;
+
+    a {
+      color: #ffffff;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    a:active {
+      color: #ffffff;
+    }
+  }
 }
 
 /* Footer */
@@ -264,9 +239,9 @@ footer {
   .service-title {
     font-size: 2.1rem;
   }
-  
+
   .contact-line {
-	font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 }
 
