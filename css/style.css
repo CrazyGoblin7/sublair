@@ -63,7 +63,7 @@ a {
 }
 
 .contact-line a:hover {
-  color: #94C0DC;
+  color: #94c0dc;
 }
 
 .contact-line i {
@@ -212,6 +212,16 @@ footer {
   color: #b8d0e8;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.85rem;
+}
+
+footer a,
+footer a:active {
+  color: #b8d0e8;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #94c0dc;
 }
 
 /* Media */
